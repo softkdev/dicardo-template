@@ -1,0 +1,172 @@
+// Mixins for Dicardo project
+
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Button mixins
+@mixin button-base {
+  border: none;
+  border-radius: $border-radius-full;
+  font-family: $font-family;
+  font-weight: $font-weight-semibold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  text-decoration: none;
+}
+
+@mixin button-primary {
+  @include button-base;
+  background: $primary-color;
+  color: white;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+@mixin button-secondary {
+  @include button-base;
+  background: $secondary-color;
+  color: white;
+
+  &:hover {
+    background: darken($secondary-color, 10%);
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+@mixin button-success {
+  @include button-base;
+  background: $success-color;
+  color: white;
+
+  &:hover {
+    background: darken($success-color, 10%);
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Card mixins
+@mixin card-base {
+  background: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-xl;
+  }
+}
+
+// Responsive mixins
+@mixin mobile {
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+// RTL mixins
+@mixin rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+@mixin ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+// Gradient mixins
+@mixin gradient-primary {
+  background: $primary-gradient;
+}
+
+@mixin gradient-sora {
+  background: $sora-gradient;
+}
+
+@mixin gradient-promo {
+  background: $promo-gradient;
+}
+
+// Animation mixins
+@mixin fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@mixin slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@mixin pulse {
+  animation: pulse 2s infinite;
+}
+
+// Keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

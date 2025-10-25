@@ -1,0 +1,282 @@
+// Card components for Dicardo project
+
+.card-custom {
+  @include card-base;
+  padding: $spacing-xl;
+
+  &--elevated {
+    box-shadow: $shadow-lg;
+
+    &:hover {
+      box-shadow: $shadow-xl;
+    }
+  }
+
+  &--product {
+    @include card-base;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: $spacing-xl;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $shadow-xl;
+    }
+  }
+
+  &__body {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: $font-weight-semibold;
+    color: $dark-color;
+    margin-bottom: $spacing-lg;
+    line-height: 1.5;
+  }
+
+  &__content {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: $border-radius-md;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $spacing-md;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  &__date {
+    font-weight: $font-weight-semibold;
+  }
+
+  &__author {
+    color: $primary-color;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+// Sora product card
+.sora-product-card {
+  @include card-base;
+  padding: $spacing-xl;
+  position: relative;
+  margin: $spacing-xl 0;
+  background: white;
+  border-radius: $border-radius-xl;
+  box-shadow: $shadow-lg;
+}
+
+.sora-header {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-md;
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.sora-icon {
+  flex-shrink: 0;
+}
+
+.sora-cloud {
+  width: 80px;
+  height: 80px;
+  @include gradient-sora;
+  border-radius: 50px 50px 50px 0;
+  position: relative;
+  @include flex-center;
+}
+
+.sora-eyes {
+  display: flex;
+  gap: 8px;
+
+  .eye {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 6px;
+      height: 6px;
+      background: #333;
+      border-radius: 50%;
+    }
+  }
+}
+
+.sora-content {
+  flex: 1;
+}
+
+.sora-title {
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+  color: $dark-color;
+  margin-bottom: $spacing-md;
+
+  @include mobile {
+    font-size: 1.5rem;
+  }
+}
+
+.sora-support {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  @include mobile {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+}
+
+.support-label {
+  font-weight: $font-weight-semibold;
+  color: #666;
+}
+
+.support-phone {
+  background: $info-color;
+  color: white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-full;
+  @include flex-center;
+  gap: $spacing-sm;
+}
+
+.sora-info {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  @include mobile {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+}
+
+.info-label {
+  font-weight: $font-weight-semibold;
+  color: #666;
+}
+
+.chatgpt-badge {
+  background: $primary-color;
+  color: white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-full;
+  @include flex-center;
+  gap: $spacing-sm;
+}
+
+.sora-tag {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: $dark-color;
+  color: white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-full;
+  @include flex-center;
+  gap: $spacing-sm;
+}
+
+.sora-cloud-small {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 10px 10px 10px 0;
+  position: relative;
+  @include flex-center;
+}
+
+.sora-eyes-small {
+  display: flex;
+  gap: 2px;
+
+  .eye {
+    width: 3px;
+    height: 3px;
+    background: #333;
+    border-radius: 50%;
+  }
+}
+
+// Promo banner card
+.sora-card {
+  background: $secondary-color;
+  color: white;
+  padding: $spacing-xl;
+  border-radius: $border-radius-lg;
+  text-align: center;
+  min-width: 250px;
+}
+
+.sora-icon-card {
+  margin-bottom: $spacing-md;
+}
+
+.sora-cloud-card {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 30px 30px 30px 0;
+  margin: 0 auto;
+  position: relative;
+  @include flex-center;
+}
+
+.sora-eyes-card {
+  display: flex;
+  gap: 6px;
+
+  .eye {
+    width: 8px;
+    height: 8px;
+    background: #333;
+    border-radius: 50%;
+  }
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacing-sm;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0;
+}

@@ -1,0 +1,113 @@
+// Bootstrap overrides for Dicardo project
+
+// Override Bootstrap's default RTL behavior
+html[dir="rtl"] {
+  .container {
+    direction: rtl;
+  }
+
+  .row {
+    direction: rtl;
+  }
+
+  .col {
+    direction: rtl;
+  }
+}
+
+// Override Bootstrap's default font
+body {
+  font-family: $font-family !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+// Override Bootstrap's default button styles
+.btn {
+  font-family: $font-family;
+  font-weight: $font-weight-semibold;
+  border-radius: $border-radius-full;
+  transition: all 0.3s ease;
+}
+
+// Override Bootstrap's default card styles
+.card {
+  font-family: $font-family;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Override Bootstrap's default form styles
+.form-control {
+  font-family: $font-family;
+  border-radius: $border-radius-md;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+  }
+}
+
+// Override Bootstrap's default spacing
+.py-16 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 4rem !important;
+}
+
+.mt-8 {
+  margin-top: 4rem !important;
+}
+
+// Override Bootstrap's default text alignment for RTL
+.text-start {
+  text-align: right !important;
+}
+
+.text-end {
+  text-align: left !important;
+}
+
+// Override Bootstrap's default flex direction for RTL
+.flex-row {
+  flex-direction: row-reverse !important;
+}
+
+.flex-row-reverse {
+  flex-direction: row !important;
+}
+
+// Override Bootstrap's default margin and padding for RTL
+.me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.pe-3 {
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+
+.ps-3 {
+  padding-right: 1rem !important;
+  padding-left: 0 !important;
+}

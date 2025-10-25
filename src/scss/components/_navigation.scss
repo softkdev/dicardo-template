@@ -1,0 +1,51 @@
+// Navigation components for Dicardo project
+// Note: Header is removed as per user request
+
+// Since header is removed, we'll keep this file minimal
+// but ready for future navigation needs
+
+.nav-custom {
+  // Navigation styles can be added here if needed in the future
+  display: none; // Hidden as per user request
+}
+
+// Category tabs for product selection
+.category-tabs {
+  @include flex-center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-xxl;
+  flex-wrap: wrap;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tab-button {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #666;
+  padding: 0.8rem $spacing-lg;
+  border-radius: $border-radius-full;
+  font-size: 1rem;
+  font-weight: $font-weight-semibold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: white;
+  }
+
+  &:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+  }
+
+  &.active:hover {
+    background: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}

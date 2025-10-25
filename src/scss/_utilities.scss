@@ -1,0 +1,233 @@
+// Utility classes for Dicardo project
+
+// Text utilities
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-secondary {
+  color: $secondary-color !important;
+}
+
+.text-success {
+  color: $success-color !important;
+}
+
+.text-danger {
+  color: $danger-color !important;
+}
+
+.text-warning {
+  color: $warning-color !important;
+}
+
+.text-info {
+  color: $info-color !important;
+}
+
+// Background utilities
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+
+.bg-success {
+  background-color: $success-color !important;
+}
+
+.bg-danger {
+  background-color: $danger-color !important;
+}
+
+.bg-warning {
+  background-color: $warning-color !important;
+}
+
+.bg-info {
+  background-color: $info-color !important;
+}
+
+// Gradient utilities
+.bg-gradient-primary {
+  @include gradient-primary;
+}
+
+.bg-gradient-sora {
+  @include gradient-sora;
+}
+
+.bg-gradient-promo {
+  @include gradient-promo;
+}
+
+// Spacing utilities
+.p-xs {
+  padding: $spacing-xs !important;
+}
+.p-sm {
+  padding: $spacing-sm !important;
+}
+.p-md {
+  padding: $spacing-md !important;
+}
+.p-lg {
+  padding: $spacing-lg !important;
+}
+.p-xl {
+  padding: $spacing-xl !important;
+}
+.p-xxl {
+  padding: $spacing-xxl !important;
+}
+
+.m-xs {
+  margin: $spacing-xs !important;
+}
+.m-sm {
+  margin: $spacing-sm !important;
+}
+.m-md {
+  margin: $spacing-md !important;
+}
+.m-lg {
+  margin: $spacing-lg !important;
+}
+.m-xl {
+  margin: $spacing-xl !important;
+}
+.m-xxl {
+  margin: $spacing-xxl !important;
+}
+
+// Border radius utilities
+.rounded-sm {
+  border-radius: $border-radius-sm !important;
+}
+.rounded-md {
+  border-radius: $border-radius-md !important;
+}
+.rounded-lg {
+  border-radius: $border-radius-lg !important;
+}
+.rounded-xl {
+  border-radius: $border-radius-xl !important;
+}
+.rounded-full {
+  border-radius: $border-radius-full !important;
+}
+
+// Shadow utilities
+.shadow-sm {
+  box-shadow: $shadow-sm !important;
+}
+.shadow-md {
+  box-shadow: $shadow-md !important;
+}
+.shadow-lg {
+  box-shadow: $shadow-lg !important;
+}
+.shadow-xl {
+  box-shadow: $shadow-xl !important;
+}
+
+// Display utilities
+.d-flex {
+  display: flex !important;
+}
+.d-inline-flex {
+  display: inline-flex !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-none {
+  display: none !important;
+}
+
+// Flex utilities
+.flex-center {
+  @include flex-center;
+}
+.flex-between {
+  @include flex-between;
+}
+.flex-column {
+  @include flex-column;
+}
+
+// Animation utilities
+.fade-in {
+  @include fade-in;
+}
+.slide-up {
+  @include slide-up;
+}
+.pulse {
+  @include pulse;
+}
+
+// RTL utilities
+.rtl {
+  @include rtl;
+}
+.ltr {
+  @include ltr;
+}
+
+// Font weight utilities
+.fw-light {
+  font-weight: 300 !important;
+}
+.fw-normal {
+  font-weight: $font-weight-normal !important;
+}
+.fw-medium {
+  font-weight: $font-weight-medium !important;
+}
+.fw-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+.fw-bold {
+  font-weight: $font-weight-bold !important;
+}
+.fw-extrabold {
+  font-weight: $font-weight-extrabold !important;
+}
+.fw-black {
+  font-weight: $font-weight-black !important;
+}
+
+// Font size utilities
+.fs-xs {
+  font-size: 0.75rem !important;
+}
+.fs-sm {
+  font-size: 0.875rem !important;
+}
+.fs-base {
+  font-size: $font-size-base !important;
+}
+.fs-lg {
+  font-size: 1.125rem !important;
+}
+.fs-xl {
+  font-size: 1.25rem !important;
+}
+.fs-2xl {
+  font-size: 1.5rem !important;
+}
+.fs-3xl {
+  font-size: 1.875rem !important;
+}
+.fs-4xl {
+  font-size: 2.25rem !important;
+}
+.fs-5xl {
+  font-size: 3rem !important;
+}

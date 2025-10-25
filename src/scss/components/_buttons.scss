@@ -1,0 +1,131 @@
+// Button components for Dicardo project
+
+.btn-custom {
+  @include button-base;
+  padding: $spacing-md $spacing-xl;
+  font-size: $font-size-base;
+
+  &--primary {
+    @include button-primary;
+  }
+
+  &--secondary {
+    @include button-secondary;
+  }
+
+  &--success {
+    @include button-success;
+  }
+
+  &--lg {
+    padding: $spacing-lg $spacing-xxl;
+    font-size: 1.2rem;
+  }
+
+  &--sm {
+    padding: $spacing-sm $spacing-md;
+    font-size: 0.9rem;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background: $primary-color;
+      color: white;
+    }
+  }
+}
+
+// Specific button styles for Dicardo
+.buy-button {
+  @include button-success;
+  padding: $spacing-md $spacing-xl;
+  font-size: 1.1rem;
+  font-weight: $font-weight-semibold;
+}
+
+.buy-now-button {
+  @include button-primary;
+  padding: $spacing-lg $spacing-xxl;
+  font-size: 1.2rem;
+  font-weight: $font-weight-semibold;
+  margin: 0 auto;
+}
+
+.warranty-btn {
+  background: #e9ecef;
+  border: 1px solid #dee2e6;
+  color: #666;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-full;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: $success-color;
+    border-color: $success-color;
+    color: white;
+  }
+
+  &:hover {
+    background: #dee2e6;
+    border-color: #ced4da;
+  }
+
+  &.active:hover {
+    background: darken($success-color, 10%);
+    border-color: darken($success-color, 10%);
+  }
+}
+
+.tab-button {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #666;
+  padding: $spacing-md $spacing-lg;
+  border-radius: $border-radius-full;
+  font-size: 1rem;
+  font-weight: $font-weight-semibold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: white;
+  }
+
+  &:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+  }
+
+  &.active:hover {
+    background: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+// Price button
+.price-button {
+  background: $warning-color;
+  color: $dark-color;
+  padding: $spacing-md;
+  border-radius: $border-radius-md;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: $font-weight-semibold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: darken($warning-color, 10%);
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}

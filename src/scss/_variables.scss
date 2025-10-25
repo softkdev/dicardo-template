@@ -1,0 +1,64 @@
+// Variables for Dicardo project
+// Persian RTL website for digital account purchases
+
+// Colors
+$primary-color: #8b5cf6;
+$secondary-color: #4facfe;
+$success-color: #2ed573;
+$danger-color: #ff4757;
+$warning-color: #feca57;
+$info-color: #007bff;
+$light-color: #f8f9fa;
+$dark-color: #333;
+
+// Gradients
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$sora-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+$promo-gradient: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+
+// Typography
+$font-family: "Yekan Bakh", sans-serif;
+$font-size-base: 16px;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+// Border Radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-xl: 20px;
+$border-radius-full: 50px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.1);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

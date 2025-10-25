@@ -1,0 +1,37 @@
+{
+  "name": "dicardo-test",
+  "version": "1.0.0",
+  "description": "Dicardo project built with HTML, SCSS, Bootstrap, and Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "bootstrap",
+    "gulp",
+    "responsive"
+  ],
+  "author": "Frontend Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "browser-sync": "^2.29.3",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "del": "^6.1.1",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

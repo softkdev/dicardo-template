@@ -1,0 +1,145 @@
+// Hero section components for Dicardo project
+
+.hero-section {
+  padding: $spacing-xl 0;
+  @include gradient-primary;
+  min-height: 60vh;
+  @include flex-center;
+}
+
+// Promotional banner
+.promo-banner {
+  @include gradient-promo;
+  padding: $spacing-xxl 0;
+  margin: $spacing-xl 0;
+}
+
+.promo-content {
+  @include flex-between;
+  gap: $spacing-xl;
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.promo-left {
+  @include flex-column;
+  gap: $spacing-md;
+  align-items: flex-start;
+
+  @include mobile {
+    align-items: center;
+  }
+}
+
+.discount-tag {
+  background: $danger-color;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  @include flex-center;
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid $danger-color;
+  }
+}
+
+.countdown-timer {
+  background: $dark-color;
+  color: white;
+  padding: $spacing-md $spacing-xl;
+  border-radius: $border-radius-md;
+  font-family: "Courier New", monospace;
+  font-size: 1.2rem;
+  font-weight: $font-weight-bold;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.promo-center {
+  text-align: center;
+  color: white;
+  flex: 1;
+}
+
+.promo-title {
+  font-size: 3rem;
+  font-weight: $font-weight-black;
+  margin-bottom: $spacing-md;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+  @include mobile {
+    font-size: 2rem;
+  }
+}
+
+.promo-description {
+  font-size: 1.2rem;
+  margin-bottom: $spacing-lg;
+  opacity: 0.9;
+}
+
+.price-info {
+  @include flex-center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  @include mobile {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+}
+
+.price-label {
+  font-size: 1.1rem;
+  font-weight: $font-weight-semibold;
+}
+
+.original-price {
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.discount-percent {
+  background: $danger-color;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: $border-radius-full;
+  font-weight: $font-weight-bold;
+}
+
+.currency {
+  font-size: 1.1rem;
+  font-weight: $font-weight-semibold;
+}
+
+.exclusive-text {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.promo-right {
+  display: flex;
+  justify-content: flex-end;
+
+  @include mobile {
+    justify-content: center;
+  }
+}
