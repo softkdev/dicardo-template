@@ -52,15 +52,36 @@ body {
   margin: 2rem 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
 
 .sora-icon-large {
   flex-shrink: 0;
+  order: 1; /* Right side */
+
+  svg {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .sora-content {
   flex: 1;
+  order: 2; /* Center */
+}
+
+.sora-tag {
+  order: 3; /* Left side */
+  position: static;
+  background: #534cc4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #ffd700; /* Golden border */
 }
 
 .sora-title {
@@ -73,8 +94,6 @@ body {
 .sora-support {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .support-label {
@@ -86,7 +105,6 @@ body {
   background: #736dd2;
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 25px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -96,7 +114,6 @@ body {
 .sora-info {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .info-label {
@@ -108,24 +125,10 @@ body {
   background: #736dd2;
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 25px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   box-shadow: 0px -2.67px 13.33px 0px #ffffff33 inset;
-}
-
-.sora-tag {
-  position: absolute;
-  top: -10px;
-  right: 20px;
-  background: #534cc4;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 // Section 2: Promotional Banner
@@ -183,7 +186,6 @@ body {
   border: 2px solid #2ebe5a;
   color: white;
   padding: 1rem 2rem;
-  border-radius: 25px;
   font-size: 1.1rem;
   font-weight: 600;
   display: flex;
@@ -328,7 +330,6 @@ body {
   border: 2px solid #d9d9d9;
   color: #666;
   padding: 0.8rem 1.5rem;
-  border-radius: 25px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -394,7 +395,6 @@ body {
   border: 1px solid #d9d9d9;
   color: #666;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -416,7 +416,6 @@ body {
   background: #d42d2d;
   color: white;
   padding: 1rem;
-  border-radius: 10px;
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;

@@ -152,12 +152,10 @@
 .sora-support {
   display: flex;
   align-items: center;
-  gap: $spacing-md;
-  margin-bottom: $spacing-md;
+  gap: $spacing-sm;
 
   @include mobile {
     flex-direction: column;
-    gap: $spacing-sm;
   }
 }
 
@@ -170,7 +168,7 @@
   background: $info-color;
   color: white;
   padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius-full;
+  border-radius: $border-radius-md;
   @include flex-center;
   gap: $spacing-sm;
 }
@@ -178,11 +176,10 @@
 .sora-info {
   display: flex;
   align-items: center;
-  gap: $spacing-md;
+  gap: $spacing-sm;
 
   @include mobile {
     flex-direction: column;
-    gap: $spacing-sm;
   }
 }
 
@@ -195,7 +192,7 @@
   background: $primary-color;
   color: white;
   padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius-full;
+  border-radius: $border-radius-md;
   @include flex-center;
   gap: $spacing-sm;
 }
@@ -207,7 +204,7 @@
   background: $dark-color;
   color: white;
   padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius-full;
+  border-radius: $border-radius-md;
   @include flex-center;
   gap: $spacing-sm;
 }
