@@ -194,6 +194,7 @@ body {
 .support-label {
   font-weight: 600;
   color: #666;
+  text-wrap: nowrap;
 }
 
 .support-phone {
@@ -217,6 +218,7 @@ body {
   font-weight: 600;
   color: #666;
   margin-left: 0.5rem;
+  text-wrap: nowrap;
 }
 
 .chatgpt-badge {
@@ -425,6 +427,7 @@ body {
   font-size: 15px;
   flex: 1;
   font-weight: 600;
+  text-wrap: nowrap;
 }
 
 .original-price {
@@ -455,6 +458,7 @@ body {
   font-size: 1rem;
   opacity: 0.9;
   margin: 0;
+  text-wrap: nowrap;
 }
 
 .card-title {
@@ -466,59 +470,6 @@ body {
   font-size: 0.9rem;
   opacity: 0.9;
   margin: 0;
-}
-
-// Responsive Design
-@media (max-width: 768px) {
-  .sora-product-card {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
-  }
-
-  .sora-info-row {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-
-  .promo-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
-  .promo-left {
-    order: 1;
-    align-items: center;
-  }
-
-  .promo-right {
-    order: 3;
-    justify-content: center;
-  }
-
-  .promo-title {
-    font-size: 2rem;
-  }
-
-  .sora-title {
-    font-size: 1.5rem;
-  }
-
-  .product-cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .selection-main-title {
-    font-size: 1.5rem;
-  }
-
-  .buy-now-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
 }
 
 // Section 3: Product Selection
@@ -817,6 +768,7 @@ body {
   font-weight: 700;
   color: #333;
   flex: 1;
+  text-wrap: nowrap;
 }
 
 .notes-content {
@@ -852,4 +804,339 @@ body {
   color: #151515;
   margin: 0;
   flex: 1;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .sora-product-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 1.5rem;
+  }
+
+  .sora-info-row {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .promo-left {
+    order: 3;
+    align-items: center;
+  }
+
+  .promo-right {
+    order: 1;
+    justify-content: center;
+  }
+
+  .promo-title {
+    font-size: 2rem;
+  }
+
+  .sora-title {
+    font-size: 1.5rem;
+  }
+
+  .product-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selection-main-title {
+    font-size: 1.5rem;
+  }
+
+  .buy-now-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  // Product Selection Section
+  .product-selection-section {
+    padding: 20px 15px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .selection-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .notes-title {
+    font-size: 1.2rem;
+  }
+
+  .selection-tabs {
+    padding: 5px;
+    gap: 8px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+
+    .tab-icon {
+      display: none;
+    }
+  }
+
+  .product-cards-grid {
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .product-card-title {
+    font-size: 0.9rem;
+  }
+
+  .warranty-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .warranty-btn {
+    min-width: auto;
+    padding: 8px 12px;
+  }
+
+  .price-value {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .product-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .buy-now-button {
+    width: 100%;
+    padding: 12px 2rem;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  // Notes Section
+  .notes-section {
+    padding: 20px 15px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .notes-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    svg:last-child {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .notes-title {
+    font-size: 1.2rem;
+    flex: none;
+  }
+
+  .note-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .note-accent-bar {
+    width: 6px;
+    height: 25px;
+  }
+
+  .note-item {
+    gap: 10px;
+  }
+
+  // Promo Section
+  .promo-content {
+    padding-left: 20px;
+    background-size: unset;
+    background-position: top left;
+    align-items: start;
+  }
+
+  .promo-center {
+    order: 2;
+  }
+
+  .promo-left {
+    order: 3;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .promo-right {
+    order: 1;
+  }
+
+  .countdown-timer {
+    padding: 10px 15px;
+  }
+
+  .timer {
+    font-size: 20px;
+  }
+
+  .buy-button {
+    padding: 12px 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .promo-description {
+    font-size: 1rem;
+  }
+
+  .price-section {
+    // flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+// Tablet Responsive Styles (768px - 1024px)
+@media (min-width: 769px) and (max-width: 1024px) {
+  // Sora Product Card
+  .sora-product-card {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .sora-icon-large svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sora-title {
+    font-size: 1.8rem;
+  }
+
+  .sora-info-row {
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  // Promo Section
+  .promo-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    align-items: start;
+    background-size: unset;
+    background-position: top left;
+  }
+
+  .promo-left,
+  .promo-center,
+  .promo-right {
+    width: unset;
+  }
+  .promo-left {
+    flex-direction: row;
+  }
+  .promo-center {
+    flex: 1;
+  }
+  .promo-right {
+    flex: 1;
+  }
+
+  .promo-title {
+    font-size: 2rem;
+  }
+
+  .timer {
+    font-size: 24px;
+  }
+
+  .buy-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  // Product Selection Section
+  .product-selection-section {
+    padding: 30px 20px;
+  }
+
+  .selection-header svg:last-child {
+    width: 100%;
+  }
+
+  .selection-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .product-cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+  }
+
+  .product-card {
+    padding: 1.2rem;
+  }
+
+  // Notes Section
+  .notes-section {
+    padding: 30px 20px;
+  }
+
+  .notes-header svg:last-child {
+    width: 100%;
+  }
+
+  .buy-now-button {
+    width: 100%;
+    max-width: 400px;
+  }
 }
