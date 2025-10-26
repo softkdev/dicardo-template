@@ -60,10 +60,10 @@
     border-color: #ced4da;
   }
 
-  &.active:hover {
-    background: darken($success-color, 10%);
-    border-color: darken($success-color, 10%);
-  }
+  // &.active:hover {
+  //   background: darken($success-color, 10%);
+  //   border-color: darken($success-color, 10%);
+  // }
 }
 
 .tab-button {
@@ -88,10 +88,10 @@
     border-color: #dee2e6;
   }
 
-  &.active:hover {
-    background: darken($primary-color, 10%);
-    border-color: darken($primary-color, 10%);
-  }
+  // &.active:hover {
+  //   // background: darken($primary-color, 10%);
+  //   // border-color: darken($primary-color, 10%);
+  // }
 }
 
 // Price button
@@ -108,7 +108,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: darken($warning-color, 10%);
+    // background: darken($warning-color, 10%);
     transform: translateY(-2px);
     box-shadow: $shadow-md;
   }

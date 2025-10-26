@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "start": "serve -s dist"
   },
   "keywords": [
     "html",

@@ -39,7 +39,7 @@
   color: white;
 
   &:hover {
-    background: darken($primary-color, 10%);
+    // background: darken($primary-color, 10%);
     transform: translateY(-2px);
     box-shadow: $shadow-lg;
   }
@@ -51,7 +51,7 @@
   color: white;
 
   &:hover {
-    background: darken($secondary-color, 10%);
+    // background: darken($secondary-color, 10%);
     transform: translateY(-2px);
     box-shadow: $shadow-lg;
   }
@@ -63,7 +63,7 @@
   color: white;
 
   &:hover {
-    background: darken($success-color, 10%);
+    // background: darken($success-color, 10%);
     transform: translateY(-2px);
     box-shadow: $shadow-lg;
   }
