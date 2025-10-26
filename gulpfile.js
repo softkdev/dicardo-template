@@ -76,7 +76,7 @@ function minifyCSS() {
         level: 2,
       })
     )
-    .pipe(rename({ suffix: ".min" }))
+    .pipe(rename({ basename: "main" }))
     .pipe(gulp.dest(paths.dist.css));
 }
 
