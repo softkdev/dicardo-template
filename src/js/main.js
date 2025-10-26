@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initProductSelection();
   initWarrantySelection();
   initCategoryTabs();
-  initBuyButtons();
+  // initBuyButtons();
   initAnimations();
 });
 

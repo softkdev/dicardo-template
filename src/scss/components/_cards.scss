@@ -74,17 +74,6 @@
   }
 }
 
-// Sora product card
-.sora-product-card {
-  @include card-base;
-  padding: $spacing-xl;
-  position: relative;
-  margin: $spacing-xl 0;
-  background: white;
-  border-radius: $border-radius-xl;
-  box-shadow: $shadow-lg;
-}
-
 .sora-header {
   display: flex;
   align-items: center;
@@ -198,9 +187,6 @@
 }
 
 .sora-tag {
-  position: absolute;
-  top: -10px;
-  right: 20px;
   background: $dark-color;
   color: white;
   padding: $spacing-sm $spacing-md;

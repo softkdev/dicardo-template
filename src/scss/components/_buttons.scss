@@ -39,22 +39,6 @@
   }
 }
 
-// Specific button styles for Dicardo
-.buy-button {
-  @include button-success;
-  padding: $spacing-md $spacing-xl;
-  font-size: 1.1rem;
-  font-weight: $font-weight-semibold;
-}
-
-.buy-now-button {
-  @include button-primary;
-  padding: $spacing-lg $spacing-xxl;
-  font-size: 1.2rem;
-  font-weight: $font-weight-semibold;
-  margin: 0 auto;
-}
-
 .warranty-btn {
   background: #e9ecef;
   border: 1px solid #dee2e6;
